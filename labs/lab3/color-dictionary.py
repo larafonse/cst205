@@ -8,14 +8,14 @@ color_dictionary = {
 "yellow":{"red":255,"green":255,"blue":0}
 }
 
-# color=input("Enter a color: ")
-# channel=input("Enter a channel: ")
+color=input("Enter a color: ")
+channel=input("Enter a channel: ")
 
-# # value assignment
-# channel_value=color_dictionary[color][channel]
+# value assignment
+channel_value=color_dictionary[color][channel]
 
-# # final output
-# print(f"The {channel} channel of {color} has a value {channel_value}")
+# final output
+print(f"The {channel} channel of {color} has a value {channel_value}")
 
 
 # RGB tuples of any colors in color_dictionary whose second letter is "e"
