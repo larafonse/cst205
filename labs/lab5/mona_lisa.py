@@ -1,3 +1,7 @@
+#mona_lisa.py
+#This programs uses a given list of numbers and creates a grayscle Mona Lisa png
+#Created by Nicolas Lara Fonseca & Rodrigo Andrade
+
 from PIL import Image
 
 mona_list = [132, 128, 126, 123, 137, 129, 130, 145, 158,
@@ -41,13 +45,19 @@ mona_list = [132, 128, 126, 123, 137, 129, 130, 145, 158,
 1, 7, 8, 13, 8, 9, 12, 17, 19, 26, 41, 42, 24, 11, 5, 0,
 1, 7, 4]
 
+# a new image is created with the width of 18 and length of 29
 monaLisaIm = Image.new('L', (18,29))
+
+# for loop that will place the grayscale color into the created image
 width, height = monaLisaIm.size
 i=0
 for y in range(height):
 	for x in range(width):
 		monaLisaIm.putpixel((x,y),mona_list[i])
 		i=i+1
-	
-monaLisaIm.save("monalisa.jpg")
+
+#program saves image as monalisa.png
+monaLisaIm.save("monalisa.png")
+
+#program opens image
 monaLisaIm.show()
