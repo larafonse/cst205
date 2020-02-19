@@ -1,0 +1,12 @@
+class definition begins 485 
+
+docstring
+    """
+    This class represents an image object.  To create
+    :py:class:`~PIL.Image.Image` objects, use the appropriate factory
+    functions.  There's hardly ever any reason to call the Image constructor
+    directly.
+
+    * :py:func:`~PIL.Image.open`
+    * :py:func:`~PIL.Image.new`
+    * :py:func:`~
