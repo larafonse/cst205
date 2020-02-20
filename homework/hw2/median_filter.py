@@ -16,7 +16,7 @@ for filepath in glob('images/*.png'):
 new_img=Image.new('RGB',(img_list[0].width,img_list[0].height),'white')
 
 median = floor((len(img_list)+1)/2)
-print(median)
+
 
 
 for x in range(new_img.width):
