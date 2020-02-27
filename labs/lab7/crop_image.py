@@ -3,7 +3,7 @@ from PIL import Image
 
 def copy_jeanne():
 	 # source image
-	 jeanne = Image.open("images/car_greenscreen.png")
+	 jeanne = Image.open("images/donut.jpg")
 	 print(jeanne.size)
 	 # destination image
 	 canvas = Image.new("RGB", (1000,657), "white")
@@ -19,5 +19,5 @@ def copy_jeanne():
 	 canvas.show()
 
 copy_jeanne()
-jeanne = Image.open("images/car_greenscreen.png")
+jeanne = Image.open("images/donut.png")
 print(jeanne.size)
