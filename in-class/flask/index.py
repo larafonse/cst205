@@ -4,18 +4,13 @@ from flask_bootstrap import Bootstrap
 app = Flask(__name__)
 bootstrap = Bootstrap(app) 
 
+# Dictionary that holds information that will be passed into home directoryu
 dict= {
-    'one':1,
-    'two':2,
-    'three':3}
-@app.route('/hello')
-def hello():
-    return 'Hello World from Flask'
+    'one':'Lab 11: Flask',
+    'two':'HW3: Image Search',
+    'three':'Blues Music Paper'}
 
-# @app.route('/')
-# def root():
-#     return 'Hello You Are in the Root'
-
+# route that takes in dictioary variable
 @app.route('/')
 def home():
     return render_template('template1.html', var = dict)
